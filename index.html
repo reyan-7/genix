@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Genix ID — استوديو تقني عربي للذكاء الاصطناعي، الويب، الهوية البصرية والإنتاج المرئي.">
+  <title>Genix ID | تقنيات المستقبل</title>
+  <link rel="icon" href="assets/brand/logo.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">تخطي إلى المحتوى</a>
+
+  <div class="circuit-bg" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="topbar" id="header">
+    <div class="topbar__shell">
+      <a href="#home" class="topbar__brand">
+        <img src="assets/brand/logo.jpg" alt="شعار Genix ID" class="topbar__logo" width="40" height="40">
+        <span class="topbar__title">GENIX <span class="neon-pink">ID</span></span>
+      </a>
+      <button class="topbar__toggle" id="navToggle" aria-label="قائمة التنقل" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="topbar__nav" id="navMenu">
+        <a href="#home" class="nav-link active">الرئيسية</a>
+        <a href="#solutions" class="nav-link">خدماتنا</a>
+        <a href="#showreel" class="nav-link">معرض الأعمال</a>
+        <a href="#contact" class="nav-link btn-action">ابتدئ مشروعك</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero__shell">
+        <div class="hero__content reveal">
+          <div class="hero__badge">✦ استوديو الإنتاج الرقمي المتكامل</div>
+          <h1 class="hero__title">
+            نلهم الواقع بـ <br>
+            <span class="hero__rotate" id="heroRotate">الذكاء الاصطناعي</span>
+          </h1>
+          <p class="hero__lead">
+            نصنع الهويات البصرية الاستثنائية، نطور منصات الويب المتقدمة، ونقود ثورة الإنتاج المرئي المدعوم بالذكاء الاصطناعي.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary">ابدأ رحلتك الإبداعية</a>
+            <a href="#showreel" class="btn btn--outline">شاهد أعمالنا</a>
+          </div>
+        </div>
+        <div class="hero__media reveal">
+          <div class="hero__frame">
+            <video class="hero__vid" autoplay loop muted playsinline aria-hidden="true" data-autoplay-hero="1" id="bgVideo"></video>
+            <div class="hero__poster" id="heroPoster"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="vision reveal">
+      <div class="vision__shell">
+        <div class="vision__layout">
+          <div class="vision__text">
+            <div class="section-tag">الرؤية الإبداعية</div>
+            <h2 class="section-title">دمج الفن بالتكنولوجيا الرقمية</h2>
+            <p class="section-desc">
+              في Genix ID، لا نصمم مواقع أو ننتج فيديوهات عادية؛ بل نبني أنظمة بصرية رقمية متكاملة تعتمد على خوارزميات الذكاء الاصطناعي المتقدمة وأحدث تقنيات الويب لتعزيز حضور علامتك التجارية في المستقبل الرقمي.
+            </p>
+          </div>
+          <div class="vision__graphic">
+            <div class="vision__img-container">
+              <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>" data-src="assets/images/ceo-character.png" alt="رؤية الاستوديو" class="vision__img lazy" width="500" height="500">
+              <div class="vision__badge">Genix ID Engine v2.5</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="solutions" id="solutions">
+      <div class="solutions__shell">
+        <div class="solutions__header text-center reveal">
+          <div class="section-tag">ماذا نقدم</div>
+          <h2 class="section-title">حلول رقمية متكاملة تحت سقف واحد</h2>
+          <p class="section-desc max-w-md">نجمع بين الابتكار البرمي والإنتاج المرئي والذكي لنضمن تميز أعمالك.</p>
+        </div>
+        <div class="solutions__grid" id="solutionsGrid"></div>
+      </div>
+    </section>
+
+    <section class="showreel" id="showreel">
+      <div class="showreel__shell">
+        <div class="showreel__header text-center reveal">
+          <div class="section-tag">الإنتاج المرئي</div>
+          <h2 class="section-title">معرض العروض السينمائية والإنتاج</h2>
+          <p class="section-desc max-w-md">شاهد مقتطفات من أعمالنا الإعلانية وتصاميم الهوية الرقمية.</p>
+        </div>
+        <div class="showreel__grid id-grid" id="showreelGrid"></div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio__shell">
+        <div class="portfolio__header text-center reveal">
+          <div class="section-tag">معرض التصاميم</div>
+          <h2 class="section-title">تفاصيل الهويات والإنتاج الرقمي</h2>
+          <p class="section-desc max-w-md">تصفح الباقات الاحترافية والمخرجات البصرية التي تم توليدها وصياغتها للاستوديو.</p>
+        </div>
+        <div class="portfolio__tabs" id="portfolioTabs" role="tablist" aria-label="أقسام المعرض"></div>
+        <div class="portfolio__view" id="portfolioView"></div>
+      </div>
+    </section>
+
+    <section class="perks reveal">
+      <div class="perks__shell">
+        <div class="perks__grid">
+          <div class="perk-card">
+            <div class="perk-card__icon">🚀</div>
+            <h3>سرعة فائقة</h3>
+            <p>منصات ويب مطورة بأعلى معايير الأداء والتحسين لتجربة مستخدم لا مثيل لها.</p>
+          </div>
+          <div class="perk-card">
+            <div class="perk-card__icon">🧠</div>
+            <h3>ذكاء اصطناعي</h3>
+            <p>دمج أدوات التوليد الرقمي المتقدمة لإنتاج مواد تسويقية وهوية بصرية فريدة.</p>
+          </div>
+          <div class="perk-card">
+            <div class="perk-card__icon">🎯</div>
+            <h3>دقة متناهية</h3>
+            <p>اهتمام بالغ بأدق تفاصيل الواجهات، التصاميم، وإعدادات المونتاج السينمائي.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__shell">
+        <div class="contact__layout">
+          <div class="contact__info reveal">
+            <div class="section-tag">تواصل معنا</div>
+            <h2 class="section-title">لنصنع شيئاً عظيماً معاً</h2>
+            <p class="section-desc">
+              هل أنت جاهز لنقل مشروعك أو هويتك التجارية إلى المستوى التالي؟ املأ النموذج المقابل، أو تواصل معنا مباشرة عبر المنصات الاجتماعية.
+            </p>
+            <div class="contact__channels">
+              <a href="https://wa.me/905527223847" class="channel-link channel-link--wa" target="_blank" rel="noopener noreferrer">
+                <span>واتساب المباشر:</span> 905527223847+
+              </a>
+            </div>
+          </div>
+          <div class="contact__form-block reveal">
+            <form class="fld" id="genixForm" novalidate>
+              <div class="fld__row">
+                <div class="fld__group">
+                  <label for="fldName" class="fld__label">الاسم الكريم *</label>
+                  <input type="text" id="fldName" class="fld__input" required placeholder="أدخل اسمك الكامل">
+                  <span class="fld__err" data-for="fldName" aria-live="polite"></span>
+                </div>
+                <div class="fld__group">
+                  <label for="fldCompany" class="fld__label">اسم الشركة / المشروع</label>
+                  <input type="text" id="fldCompany" class="fld__input" placeholder="اختياري">
+                </div>
+              </div>
+              <div class="fld__group">
+                <label for="fldService" class="fld__label">الخدمة المطلوبة *</label>
+                <select id="fldService" class="fld__input fld__input--select" required>
+                  <option value="" disabled selected>اختر الخدمة الرئيسية...</option>
+                </select>
+                <span class="fld__err" data-for="fldService" aria-live="polite"></span>
+              </div>
+              <div class="fld__group">
+                <label for="fldMsg" class="fld__label">تفاصيل المشروع وملاحظاتك *</label>
+                <textarea id="fldMsg" class="fld__input fld__input--area" required rows="4" placeholder="اكتب نبذة عن مشروعك أو طلبك هنا..."></textarea>
+                <span class="fld__err" data-for="fldMsg" aria-live="polite"></span>
+              </div>
+              <button type="submit" class="btn btn--primary btn--block" id="submitBtn">
+                <span>إرسال الطلب عبر واتساب</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__shell">
+      <div class="footer__row">
+        <p class="footer__copy">&copy; 2026 GENIX ID. جميع الحقوق محفوظة. تم التطوير بشغف رقمي.</p>
+        <div class="footer__social" id="footerSocial"></div>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox">
+    <form method="dialog">
+      <button class="lightbox__close" aria-label="إغلاق المعرض">✕</button>
+    </form>
+    <div class="lightbox__container">
+      <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="الصورة السابقة">➔</button>
+      <img src="" alt="" class="lightbox__img" id="lightboxImg">
+      <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="الصورة التالية">✦</button>
+    </div>
+  </dialog>
+
+  <dialog class="modal-ok" id="successModal">
+    <div class="modal-ok__shell">
+      <div class="modal-ok__icon">✓</div>
+      <h2>تم تجهيز طلبك بنجاح!</h2>
+      <p>سيتم نقلك الآن إلى تطبيق واتساب لإرسال تفاصيل مشروعك مباشرة للاستوديو.</p>
+      <button class="btn btn--primary" id="successClose">موافق، تابع للواتساب</button>
+    </div>
+  </dialog>
+
+  <script src="js/data.js"></script>
+  <script src="js/lazy.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
